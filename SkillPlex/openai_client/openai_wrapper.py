@@ -61,7 +61,6 @@ class OpenAIWrapper:
                 **kwargs)
             
             usage = response.usage
-            print(usage)
 
             response_message = response.choices[0].message
 
