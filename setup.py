@@ -8,6 +8,9 @@ setup(
         'requests>=2.26.0',
         'openai>=0.27.0',
     ],
+    extras_require={
+        'test': ['pytest'],
+    },
     include_package_data=True,
     package_data={
         '': ['*.sql'],  # Include all .sql files, if you have any

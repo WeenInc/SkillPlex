@@ -24,5 +24,5 @@ class ExternalAPIExecutor:
                 return {"type": "synchronous", "result": result.get("result"), "status": "success"}
 
         except requests.RequestException as e:
-            logging.error(f"An error occurred while calling the external API: {e}")
+            logging.error(f"An error occurred while calling SkillPlex API: {e}")
             return {"type": "error", "message": str(e)}
